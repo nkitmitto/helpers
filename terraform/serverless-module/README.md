@@ -1,0 +1,3 @@
+# Serverless Terraform Module
+
+This module will compile and deploy your static code into S3. It will also take each function defined in `vars.tf` and create the Lambda Function along with the API Gateway references, clear the Cloudfront cache (Invalidate), and assign WAF rules to the API GW. It was created so you can write the Lambda functions but not have to worry about the API GW configuration for every integration.
